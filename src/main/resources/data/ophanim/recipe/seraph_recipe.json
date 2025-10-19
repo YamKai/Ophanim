@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:beacon",
+  "base": "minecraft:raw_copper",
+  "addition": "minecraft:breeze_rod",
+  "result": {
+    "id": "ophanim:seraph"
+  }
+}

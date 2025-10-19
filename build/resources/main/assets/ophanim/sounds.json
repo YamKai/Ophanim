@@ -1,0 +1,46 @@
+{
+  "seraphim.on": {
+    "subtitle": "subtitles.seraphim.on",
+    "sounds": [
+      {
+        "name": "ophanim:on",
+        "stream": false
+      }
+    ]
+  },
+  "seraphim.off": {
+    "subtitle": "subtitles.seraphim.off",
+    "sounds": [
+      {
+        "name": "ophanim:off",
+        "stream": false
+      }
+    ]
+  },
+  "seraphim.chat": {
+    "subtitle": "subtitles.seraphim.chat",
+    "sounds": [
+      {
+        "name": "ophanim:chat_1",
+        "stream": false
+      },
+      {
+        "name": "ophanim:chat_2",
+        "stream": false
+      },
+      {
+        "name": "ophanim:chat_3",
+        "stream": false
+      }
+    ]
+  },
+  "seraphim.burst": {
+    "subtitle": "subtitles.seraphim.burst",
+    "sounds": [
+      {
+        "name": "ophanim:burst",
+        "stream": false
+      }
+    ]
+  }
+}

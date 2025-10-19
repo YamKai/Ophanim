@@ -1,0 +1,379 @@
+{
+  "mod_elements": [
+    {
+      "name": "Seraphim",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraphim",
+      "metadata": {
+        "files": [
+          "src/main/java/com/yamkai/ophanim/entity/SeraphimEntity.java",
+          "src/main/java/com/yamkai/ophanim/client/renderer/SeraphimRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "SeraphimReturnEffectStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraphim_return_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/SeraphimReturnEffectStartProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SeraphimOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraphim_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/SeraphimOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SeraphimRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraphim_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/SeraphimRightClickedOnEntityProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Burst",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "burst",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ophanim/particles/burst.json",
+          "src/main/java/com/yamkai/ophanim/client/particle/BurstParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "Seraph",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraph",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ophanim/items/seraph.json",
+          "src/main/resources/assets/ophanim/models/item/seraph.json",
+          "src/main/java/com/yamkai/ophanim/item/SeraphItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SeraphRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraph_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/SeraphRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SeraphLeftClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraph_left_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/SeraphLeftClickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ReturnEffectLore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_effect_lore",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/ReturnEffectLoreProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EntityHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/EntityHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/PlayerTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SeraphimReturnEffectCooldown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraphim_return_effect_cooldown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/yamkai/ophanim/procedures/SeraphimReturnEffectCooldownProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Alert",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alert",
+      "metadata": {
+        "files": [
+          "src/main/java/com/yamkai/ophanim/client/particle/AlertParticle.java",
+          "src/main/resources/assets/ophanim/particles/alert.json"
+        ]
+      }
+    },
+    {
+      "name": "Jet",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "jet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ophanim/particles/jet.json",
+          "src/main/java/com/yamkai/ophanim/client/particle/JetParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "SeraphRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seraph_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ophanim/recipe/seraph_recipe.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "hurt",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "hurt_time",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "seraphim.on",
+      "files": [
+        "on"
+      ],
+      "category": "master",
+      "subtitle": "Seraphin On"
+    },
+    {
+      "name": "seraphim.off",
+      "files": [
+        "off"
+      ],
+      "category": "master",
+      "subtitle": "Seraphim Off"
+    },
+    {
+      "name": "seraphim.chat",
+      "files": [
+        "chat_1",
+        "chat_2",
+        "chat_3"
+      ],
+      "category": "master",
+      "subtitle": "Seraphim Chat"
+    },
+    {
+      "name": "seraphim.burst",
+      "files": [
+        "burst"
+      ],
+      "category": "master",
+      "subtitle": "Burst"
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.ophanim.seraphim": "Seraphim",
+      "item.ophanim.seraph": "Seraph",
+      "item.ophanim.seraph.description_0": "Effect",
+      "subtitles.seraphim.on": "Seraphin On",
+      "subtitles.seraphim.off": "Seraphim Off",
+      "subtitles.seraphim.chat": "Seraphim Chat",
+      "subtitles.seraphim.burst": "Burst"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/com/yamkai/ophanim/network/OphanimModVariables.java",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModModels.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModSounds.java",
+      "src/main/java/com/yamkai/ophanim/OphanimMod.java",
+      "src/main/resources/assets/ophanim/sounds.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModTabs.java",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModParticles.java",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModParticleTypes.java",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModItems.java",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModEntities.java",
+      "src/main/java/com/yamkai/ophanim/init/OphanimModEntityRenderers.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ophanim",
+    "modName": "Ophanim",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "modElementsPackage": "com.yamkai.ophanim"
+  },
+  "mcreatorVersion": 202500228610
+}

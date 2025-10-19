@@ -1,0 +1,50 @@
+/data get entity @s Inventory[{Slot:-106b}].components."minecraft:potion_contents".potion
+/give @s ophanim:seraph
+/data get entity @s SelectedItem
+/give @s ophanim:seraph
+/data get entity @s SelectedItem
+/give @s ophanim:seraph
+/data get entity @s SelectedItem
+/give @s ophanim:seraph
+/data get entity @s SelectedItem
+/kill @e[type=!player]
+/give @s ophanim:seraph
+/time set midnight
+/particle ophanim:burst
+/time set midnight
+/effect clear
+/give @s ophanim:seraph
+/kill @e[type=ophanim:seraphim]
+/give @s ophanim:seraph
+/kill @e[type=ophanim:seraphim]
+/give @s ophanim:seraph
+/effect give @s minecraft:instant_health infinite 100 true
+/time set midnight
+/give @s ophanim:seraph
+/particle ophanim:alert
+/playsound minecraft:entity.warden.sonic_charge master @s ~ ~ ~
+/playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~
+/playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.4
+/playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.4 1
+/playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.4 2
+/playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.4 0
+/playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.4 0.4
+/playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.4 0.2
+/particle ophanim:burst
+/give @s ophanim:seraph
+/effect give @s minecraft:resistance infinite 255 true
+/data get entity @s SelectedItem
+/give @s ophanim:seraph[custom_data={effect:"minecraft:night_vision"}] 1
+/execute as @e[type=ophanim:seraphim] run data merge entity @s {NoAI:1b}
+/execute at @e[type=ophanim:seraphim] run particle ophanim:burst
+/execute at @e[type=ophanim:seraphim] run particle flash
+/time set midnight
+/time set day
+/gamemode survival
+/damage @s
+/damage @s 1
+/time set midnight
+/damage @s 1
+/gamerule doMobSpawning false
+/kill @e[type=!player]
+/damage @s 1
